@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#d84f57</color>
+    <color name="colorPrimaryDark">#c03844</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="blue">#00b0f0</color>
+    <color name="splash_bback_color">#212330</color>
+
+
+    <color name="color_gray">#898989</color>
+    <color name="color_white">#FFFFFF</color>
+    <color name="color_black">#000000</color>
+
+    <color name="color_semi_white">#90FFFFFF</color>
+    <color name="signup_bg_color">#DEF14656</color>
+    <color name="color_transperent">#CC898989</color>
+    <color name="login_bg_tras">#CC365264</color>
+    <color name="white">#FFFFFF</color>
+    <color name="nav_bg_color">#F1F9FB</color>
+    <color name="edittedt_bg_color">#EFFFFFFF</color>
+    <color name="semi_red">#95F14656</color>
+    <color name="semi_white">#80FFFFFF</color>
+    <color name="black_semi_transparent">#B2000000</color>
+    <color name="tile_bg">#f25866</color>
+    <color name="profile_edittext_color">#EBF5F4</color>
+    <color name="inactivity_menu_color">#E2E2E2</color>
+    <color name="water_blue">#80ACE5EE</color>
+    <color name="color_blue">#ACE5EE</color>
+    <color name="fab_color">#1f1f34</color>
+
+</resources>

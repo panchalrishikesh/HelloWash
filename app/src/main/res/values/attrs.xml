@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="AutoViewPager">
+        <attr format="boolean" name="avp_indeterminate"/>
+        <attr format="boolean" name="avp_autoScroll"/>
+        <attr format="integer" name="avp_duration"/>
+    </declare-styleable>
+
+    <declare-styleable name="ExpandableLayout">
+        <attr name="exl_collapseHeight" format="dimension" />
+        <attr name="exl_collapseTargetId" format="reference" />
+        <attr name="exl_collapsePadding" format="dimension" />
+        <attr name="exl_duration" format="integer" />
+        <attr name="exl_expanded" format="boolean" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "166207436037",
+    "firebase_url": "https://hellowash-edef1.firebaseio.com",
+    "project_id": "hellowash-edef1",
+    "storage_bucket": "hellowash-edef1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:166207436037:android:477e528938254984",
+        "android_client_info": {
+          "package_name": "com.hw.hellowash"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "166207436037-td9q7e79a1hdum7hju69mkra3kg0ss7d.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "166207436037-td9q7e79a1hdum7hju69mkra3kg0ss7d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLYMO5U3BPr12QfCImNLUAAq-IqP6wa4E"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

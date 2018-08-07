@@ -1,0 +1,1070 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:elevation="5dp">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize"
+                android:background="@color/colorPrimary"
+                android:title="@null"
+                app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+                <TextView
+                    android:id="@+id/toolbar_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+
+            </android.support.v7.widget.Toolbar>
+
+
+        </android.support.design.widget.AppBarLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/colorPrimary"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/faqs_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="20dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="20dp"
+                        android:text="@string/faq_hint"
+                        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+                        android:textColor="@color/white" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="0.5dp"
+                        android:background="@color/white"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:id="@+id/faq_1_lyt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:clickable="true"
+                            android:weightSum="2"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/faq_1_quest"
+                                android:layout_width="0dp"
+                                android:layout_weight="2"
+                                android:layout_height="wrap_content"
+                                android:clickable="false"
+                                android:padding="10dp"
+                                android:text="@string/faq_1"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="@color/color_black" />
+
+                            <ImageView
+                                android:id="@+id/fa1_1_iv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:paddingRight="10dp"
+                                android:src="@drawable/ic_down_arrow"
+                                tools:ignore="VectorDrawableCompat" />
+                        </LinearLayout>
+
+                        <com.hw.hellowash.Custom.ExpandableLayout
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/faq1_expandableLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clickable="false"
+                            app:exl_expanded="false" >
+
+
+
+                            <TextView
+                                android:id="@+id/faq_1_detl"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:clickable="false"
+                                android:padding="8dp"
+                                android:text="@string/faq1_ans"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="@color/color_black" />
+                        </com.hw.hellowash.Custom.ExpandableLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:background="@color/color_gray" />
+
+                        <LinearLayout
+                            android:id="@+id/faq_2_lyt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:clickable="true"
+                            android:weightSum="2"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/faq_2_quest"
+                                android:layout_width="0dp"
+                                android:layout_weight="2"
+                                android:layout_height="wrap_content"
+                                android:clickable="false"
+                                android:padding="10dp"
+                                android:text="@string/faq_2"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="@color/color_black" />
+
+                            <ImageView
+                                android:id="@+id/fa1_2_iv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:paddingRight="10dp"
+                                android:src="@drawable/ic_down_arrow"
+                                tools:ignore="VectorDrawableCompat" />
+                        </LinearLayout>
+
+                        <com.hw.hellowash.Custom.ExpandableLayout
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/faq2_expandableLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clickable="false"
+                            app:exl_expanded="false" >
+
+                            <TextView
+                                android:id="@+id/faq_2_detl"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:clickable="false"
+                                android:padding="8dp"
+                                android:gravity="start"
+                                android:text="@string/faq2_ans"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="@color/color_black" />
+                        </com.hw.hellowash.Custom.ExpandableLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:background="@color/color_gray" />
+
+                        <LinearLayout
+                            android:id="@+id/faq_3_lyt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:clickable="true"
+                            android:weightSum="2"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/faq_3_quest"
+                                android:layout_width="0dp"
+                                android:layout_weight="2"
+                                android:layout_height="wrap_content"
+                                android:clickable="false"
+                                android:padding="10dp"
+                                android:maxLines="2"
+                                android:ems="20"
+                                android:text="@string/faq_3"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="@color/color_black" />
+
+                            <ImageView
+                                android:id="@+id/fa1_3_iv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:paddingRight="10dp"
+                                android:src="@drawable/ic_down_arrow"
+                                tools:ignore="VectorDrawableCompat" />
+                        </LinearLayout>
+
+                        <com.hw.hellowash.Custom.ExpandableLayout
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/faq3_expandableLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clickable="false"
+                            app:exl_expanded="false" >
+
+                            <TextView
+                                android:id="@+id/faq_3_detl"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:clickable="false"
+                                android:padding="8dp"
+                                android:text="@string/faq3_ans"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="@color/color_black" />
+                        </com.hw.hellowash.Custom.ExpandableLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:background="@color/color_gray" />
+
+                        <LinearLayout
+                            android:id="@+id/faq_4_lyt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:clickable="true"
+                            android:weightSum="2"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/faq_4_quest"
+                                android:layout_width="0dp"
+                                android:layout_weight="2"
+                                android:layout_height="wrap_content"
+                                android:clickable="false"
+                                android:padding="10dp"
+                                android:text="@string/faq_4"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="@color/color_black" />
+
+                            <ImageView
+                                android:id="@+id/fa1_4_iv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@+id/faq_4_quest"
+                                android:paddingRight="10dp"
+                                android:src="@drawable/ic_down_arrow"
+                                tools:ignore="VectorDrawableCompat" />
+                        </LinearLayout>
+
+                        <com.hw.hellowash.Custom.ExpandableLayout
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/faq4_expandableLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clickable="false"
+                            app:exl_expanded="false" >
+
+                            <TextView
+                                android:id="@+id/faq_4_detl"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:clickable="false"
+                                android:padding="8dp"
+                                android:text="@string/faq4_ans"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="@color/color_black" />
+                        </com.hw.hellowash.Custom.ExpandableLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:background="@color/color_gray" />
+
+                        <LinearLayout
+                            android:id="@+id/faq_5_lyt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:clickable="true"
+                            android:weightSum="2"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/faq_5_quest"
+                                android:layout_width="0dp"
+                                android:layout_weight="2"
+                                android:layout_height="wrap_content"
+                                android:clickable="false"
+                                android:padding="10dp"
+                                android:text="@string/faq_5"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="@color/color_black" />
+
+                            <ImageView
+                                android:id="@+id/fa1_5_iv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:paddingRight="10dp"
+                                android:src="@drawable/ic_down_arrow"
+                                tools:ignore="VectorDrawableCompat" />
+                        </LinearLayout>
+
+                        <com.hw.hellowash.Custom.ExpandableLayout
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/faq5_expandableLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clickable="false"
+                            app:exl_expanded="false" >
+
+                            <TextView
+                                android:id="@+id/faq_5_detl"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:clickable="false"
+                                android:padding="8dp"
+                                android:text="@string/faq5_ans"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="@color/color_black" />
+                        </com.hw.hellowash.Custom.ExpandableLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:background="@color/color_gray" />
+
+                        <LinearLayout
+                            android:id="@+id/faq_6_lyt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:clickable="true"
+                            android:weightSum="2"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/faq_6_quest"
+                                android:layout_width="0dp"
+                                android:layout_weight="2"
+                                android:layout_height="wrap_content"
+                                android:clickable="false"
+                                android:padding="10dp"
+                                android:text="@string/faq_6"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="@color/color_black" />
+
+                            <ImageView
+                                android:id="@+id/fa1_6_iv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:paddingRight="10dp"
+                                android:src="@drawable/ic_down_arrow"
+                                tools:ignore="VectorDrawableCompat" />
+                        </LinearLayout>
+
+                        <com.hw.hellowash.Custom.ExpandableLayout
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/faq6_expandableLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clickable="false"
+                            app:exl_expanded="false" >
+
+                            <TextView
+                                android:id="@+id/faq_6_detl"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:clickable="false"
+                                android:padding="8dp"
+                                android:text="@string/faq6_ans"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="@color/color_black" />
+                        </com.hw.hellowash.Custom.ExpandableLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:background="@color/color_gray" />
+
+
+                        <LinearLayout
+                            android:id="@+id/faq_7_lyt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:clickable="true"
+                            android:weightSum="2"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/faq_7_quest"
+                                android:layout_width="0dp"
+                                android:layout_weight="2"
+                                android:layout_height="wrap_content"
+                                android:clickable="false"
+                                android:padding="10dp"
+                                android:text="@string/faq_7"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="@color/color_black" />
+
+                            <ImageView
+                                android:id="@+id/fa1_7_iv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@+id/faq_7_quest"
+                                android:layout_centerVertical="true"
+                                android:paddingRight="10dp"
+                                android:src="@drawable/ic_down_arrow"
+                                tools:ignore="VectorDrawableCompat" />
+                        </LinearLayout>
+
+                        <com.hw.hellowash.Custom.ExpandableLayout
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/faq7_expandableLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clickable="false"
+                            app:exl_expanded="false" >
+
+                            <TextView
+                                android:id="@+id/faq_7_detl"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:clickable="false"
+                                android:padding="8dp"
+                                android:text="@string/faq7_ans"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="@color/color_black" />
+                        </com.hw.hellowash.Custom.ExpandableLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:background="@color/color_gray" />
+
+                        <LinearLayout
+                            android:id="@+id/faq_8_lyt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:clickable="true"
+                            android:weightSum="2"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/faq_8_quest"
+                                android:layout_width="0dp"
+                                android:layout_weight="2"
+                                android:layout_height="wrap_content"
+                                android:clickable="false"
+                                android:padding="10dp"
+                                android:text="@string/faq_8"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="@color/color_black" />
+
+                            <ImageView
+                                android:id="@+id/fa1_8_iv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:paddingRight="10dp"
+                                android:src="@drawable/ic_down_arrow"
+                                tools:ignore="VectorDrawableCompat" />
+                        </LinearLayout>
+
+                        <com.hw.hellowash.Custom.ExpandableLayout
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/faq8_expandableLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clickable="false"
+                            app:exl_expanded="false" >
+
+                            <TextView
+                                android:id="@+id/faq_8_detl"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:clickable="false"
+                                android:padding="8dp"
+                                android:text="@string/faq8_ans"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="@color/color_black" />
+                        </com.hw.hellowash.Custom.ExpandableLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:background="@color/color_gray" />
+
+                        <LinearLayout
+                            android:id="@+id/faq_9_lyt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:clickable="true"
+                            android:weightSum="2"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/faq_9_quest"
+                                android:layout_width="0dp"
+                                android:layout_weight="2"
+                                android:layout_height="wrap_content"
+                                android:clickable="false"
+                                android:padding="10dp"
+                                android:text="@string/faq_9"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="@color/color_black" />
+
+                            <ImageView
+                                android:id="@+id/fa1_9_iv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:paddingRight="10dp"
+                                android:src="@drawable/ic_down_arrow"
+                                tools:ignore="VectorDrawableCompat" />
+                        </LinearLayout>
+
+                        <com.hw.hellowash.Custom.ExpandableLayout
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/faq9_expandableLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clickable="false"
+                            app:exl_expanded="false" >
+
+                            <TextView
+                                android:id="@+id/faq_9_detl"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:clickable="false"
+                                android:padding="8dp"
+                                android:text="@string/faq9_ans"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="@color/color_black" />
+                        </com.hw.hellowash.Custom.ExpandableLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:background="@color/color_gray" />
+
+                        <LinearLayout
+                            android:id="@+id/faq_10_lyt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:clickable="true"
+                            android:weightSum="2"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/faq_10_quest"
+                                android:layout_width="0dp"
+                                android:layout_weight="2"
+                                android:layout_height="wrap_content"
+                                android:clickable="false"
+                                android:padding="10dp"
+                                android:text="@string/faq_10"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="@color/color_black" />
+
+                            <ImageView
+                                android:id="@+id/fa1_10_iv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:paddingRight="10dp"
+                                android:src="@drawable/ic_down_arrow"
+                                tools:ignore="VectorDrawableCompat" />
+                        </LinearLayout>
+
+                        <com.hw.hellowash.Custom.ExpandableLayout
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/faq10_expandableLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clickable="false"
+                            app:exl_expanded="false" >
+
+                            <TextView
+                                android:id="@+id/faq_10_detl"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:clickable="false"
+                                android:padding="8dp"
+                                android:text="@string/faq10_ans"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="@color/color_black" />
+                        </com.hw.hellowash.Custom.ExpandableLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:background="@color/color_gray" />
+
+                        <LinearLayout
+                            android:id="@+id/faq_11_lyt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:clickable="true"
+                            android:weightSum="2"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/faq_11_quest"
+                                android:layout_width="0dp"
+                                android:layout_weight="2"
+                                android:layout_height="wrap_content"
+                                android:clickable="false"
+                                android:padding="10dp"
+                                android:text="@string/faq_11"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="@color/color_black" />
+
+                            <ImageView
+                                android:id="@+id/fa1_11_iv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:paddingRight="10dp"
+                                android:src="@drawable/ic_down_arrow"
+                                tools:ignore="VectorDrawableCompat" />
+                        </LinearLayout>
+
+                        <com.hw.hellowash.Custom.ExpandableLayout
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/faq11_expandableLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clickable="false"
+                            app:exl_expanded="false" >
+
+                            <TextView
+                                android:id="@+id/faq_11_detl"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:clickable="false"
+                                android:padding="8dp"
+                                android:text="@string/faq11_ans"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="@color/color_black" />
+                        </com.hw.hellowash.Custom.ExpandableLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:background="@color/color_gray" />
+
+                        <LinearLayout
+                            android:id="@+id/faq_12_lyt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:clickable="true"
+                            android:gravity="center_vertical"
+                            android:weightSum="2"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/faq_12_quest"
+                                android:layout_width="0dp"
+                                android:layout_weight="2"
+                                android:layout_height="wrap_content"
+                                android:clickable="false"
+                                android:padding="10dp"
+                                android:text="@string/faq_12"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="@color/color_black" />
+
+                            <ImageView
+                                android:id="@+id/fa1_12_iv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:paddingRight="10dp"
+                                android:src="@drawable/ic_down_arrow"
+                                tools:ignore="VectorDrawableCompat" />
+                        </LinearLayout>
+
+                        <com.hw.hellowash.Custom.ExpandableLayout
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/faq12_expandableLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clickable="false"
+                            app:exl_expanded="false" >
+
+                            <TextView
+                                android:id="@+id/faq_12_detl"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:clickable="false"
+                                android:padding="8dp"
+                                android:text="@string/faq12_ans"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="@color/color_black" />
+                        </com.hw.hellowash.Custom.ExpandableLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:background="@color/color_gray" />
+
+                        <LinearLayout
+                            android:id="@+id/faq_13_lyt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:clickable="true"
+                            android:weightSum="2"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/faq_13_quest"
+                                android:layout_width="0dp"
+                                android:layout_weight="2"
+                                android:layout_height="wrap_content"
+                                android:clickable="false"
+                                android:padding="10dp"
+                                android:text="@string/faq_13"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="@color/color_black" />
+
+                            <ImageView
+                                android:id="@+id/fa1_13_iv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:paddingRight="10dp"
+                                android:src="@drawable/ic_down_arrow"
+                                tools:ignore="VectorDrawableCompat" />
+                        </LinearLayout>
+
+                        <com.hw.hellowash.Custom.ExpandableLayout
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/faq13_expandableLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clickable="false"
+                            app:exl_expanded="false" >
+
+                            <TextView
+                                android:id="@+id/faq_13_detl"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:clickable="false"
+                                android:padding="8dp"
+                                android:text="@string/faq13_ans"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="@color/color_black" />
+                        </com.hw.hellowash.Custom.ExpandableLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:background="@color/color_gray" />
+
+                        <LinearLayout
+                            android:id="@+id/faq_14_lyt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:clickable="true"
+                            android:weightSum="2"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/faq_14_quest"
+                                android:layout_width="0dp"
+                                android:layout_weight="2"
+                                android:layout_height="wrap_content"
+                                android:clickable="false"
+                                android:padding="10dp"
+                                android:text="@string/faq_14"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="@color/color_black" />
+
+                            <ImageView
+                                android:id="@+id/fa1_14_iv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:paddingRight="10dp"
+                                android:src="@drawable/ic_down_arrow"
+                                tools:ignore="VectorDrawableCompat" />
+                        </LinearLayout>
+
+                        <com.hw.hellowash.Custom.ExpandableLayout
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/faq14_expandableLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clickable="false"
+                            app:exl_expanded="false" >
+
+                            <TextView
+                                android:id="@+id/faq_14_detl"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:clickable="false"
+                                android:padding="8dp"
+                                android:text="@string/faq14_ans"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="@color/color_black" />
+                        </com.hw.hellowash.Custom.ExpandableLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:background="@color/color_gray" />
+
+                        <LinearLayout
+                            android:id="@+id/faq_15_lyt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:clickable="true"
+                            android:weightSum="2"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/faq_15_quest"
+                                android:layout_width="0dp"
+                                android:layout_weight="2"
+                                android:layout_height="wrap_content"
+                                android:clickable="false"
+                                android:padding="10dp"
+                                android:text="@string/faq_15"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="@color/color_black" />
+
+                            <ImageView
+                                android:id="@+id/fa1_15_iv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:paddingRight="10dp"
+                                android:src="@drawable/ic_down_arrow"
+                                tools:ignore="VectorDrawableCompat" />
+                        </LinearLayout>
+
+                        <com.hw.hellowash.Custom.ExpandableLayout
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/faq15_expandableLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clickable="false"
+                            app:exl_expanded="false" >
+
+                            <TextView
+                                android:id="@+id/faq_15_detl"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:clickable="false"
+                                android:padding="8dp"
+                                android:text="@string/faq16_ans"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="@color/color_black" />
+                        </com.hw.hellowash.Custom.ExpandableLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:background="@color/color_gray" />
+
+                        <LinearLayout
+                            android:id="@+id/faq_16_lyt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:clickable="true"
+                            android:weightSum="2"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/faq_16_quest"
+                                android:layout_width="0dp"
+                                android:layout_weight="2"
+                                android:layout_height="wrap_content"
+                                android:clickable="false"
+                                android:padding="10dp"
+                                android:text="@string/faq_16"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="@color/color_black" />
+
+                            <ImageView
+                                android:id="@+id/fa1_16_iv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:paddingRight="10dp"
+                                android:src="@drawable/ic_down_arrow"
+                                tools:ignore="VectorDrawableCompat" />
+                        </LinearLayout>
+
+                        <com.hw.hellowash.Custom.ExpandableLayout
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/faq16_expandableLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clickable="false"
+                            app:exl_expanded="false" >
+
+                            <TextView
+                                android:id="@+id/faq_16_detl"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:clickable="false"
+                                android:padding="8dp"
+                                android:text="@string/faq16_ans"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="@color/color_black" />
+                        </com.hw.hellowash.Custom.ExpandableLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:background="@color/color_gray" />
+
+                        <LinearLayout
+                            android:id="@+id/faq_17_lyt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:clickable="true"
+                            android:weightSum="2"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/faq_17_quest"
+                                android:layout_width="0dp"
+                                android:layout_weight="2"
+                                android:layout_height="wrap_content"
+                                android:clickable="false"
+                                android:padding="10dp"
+                                android:text="@string/faq_17"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="@color/color_black" />
+
+                            <ImageView
+                                android:id="@+id/fa1_17_iv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:paddingRight="10dp"
+                                android:src="@drawable/ic_down_arrow"
+                                tools:ignore="VectorDrawableCompat" />
+                        </LinearLayout>
+
+                        <com.hw.hellowash.Custom.ExpandableLayout
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/faq17_expandableLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clickable="false"
+                            app:exl_expanded="false" >
+
+                            <TextView
+                                android:id="@+id/faq_17_detl"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:clickable="false"
+                                android:padding="8dp"
+                                android:text="@string/faq17_ans"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="@color/color_black" />
+                        </com.hw.hellowash.Custom.ExpandableLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>

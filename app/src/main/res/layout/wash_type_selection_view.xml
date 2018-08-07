@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_parent_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <RelativeLayout
+            android:id="@+id/tile_circular_bg"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@drawable/circle_shape_red"
+            android:layout_centerInParent="true"
+            android:padding="5dp"
+
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:id="@+id/wastype_img"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerInParent="true"
+                android:layout_margin="5dp"
+                tools:ignore="VectorDrawableCompat" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/washtype_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:padding="10dp"
+            android:visibility="invisible"
+            android:text="@string/wash_n_fold"
+            android:textColor="@color/color_black" />
+    </LinearLayout>
+
+
+    <!--
+        <android.support.v7.widget.CardView
+            android:id="@+id/item_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_centerInParent="true"
+                    android:layout_weight="1.5"
+                    android:background="@drawable/circle_shape"
+                    android:gravity="center_horizontal">
+
+                    <ImageView
+                        android:id="@+id/wastype_img"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/ic_was_n_fold_new"
+                        tools:ignore="VectorDrawableCompat" />
+
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/washtype_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/wash_n_fold"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    -->
+
+</RelativeLayout>

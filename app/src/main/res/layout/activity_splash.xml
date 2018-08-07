@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/splash_main"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/splash_bback_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_centerInParent="true"
+        android:src="@drawable/hello_logo_main"
+        android:gravity="center"
+        android:layout_margin="20dp"
+        android:layout_gravity="center"
+        android:layout_width="250dp"
+        android:layout_height="150dp">
+
+    </ImageView>
+
+</LinearLayout>

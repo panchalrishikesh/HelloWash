@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary"
+    app:bbn_itemColorActive="@color/color_white"
+    app:bbn_itemAnimationDuration="300"
+    app:bbn_itemColorInactive="@color/semi_white"
+
+    app:bbn_rippleColor="#ccffffff">
+
+    <item
+        android:id="@+id/bbn_item1"
+        android:icon="@drawable/ic_home"
+        android:title="HOME" />
+    <item
+        android:id="@+id/bbn_item2"
+        android:icon="@drawable/ic_track_order"
+        android:title="TRACK ORDER" />
+    <item
+        android:id="@+id/bbn_item3"
+        android:icon="@drawable/ic_profile_white"
+        android:title="PROFILE" />
+
+</menu>

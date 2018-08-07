@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/credit_points"
+            android:visible="false"
+            android:title="@string/menu_credit_points" />
+
+        <item
+            android:id="@+id/my_order"
+            android:title="@string/menu_my_order" />
+
+        <item
+            android:id="@+id/serviceable_areas"
+            android:title="@string/menu_serviceable_areas" />
+
+        <item
+            android:id="@+id/refer"
+            android:title="@string/menu_refer" />
+
+        <item
+            android:id="@+id/faq"
+            android:title="@string/menu_faq" />
+
+        <item
+            android:id="@+id/support"
+            android:title="@string/menu_support" />
+
+        <item
+            android:id="@+id/rate_us"
+            android:title="@string/menu_rate_us_now" />
+    </group>
+
+</menu>
